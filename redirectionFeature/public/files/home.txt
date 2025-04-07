@@ -1,0 +1,10 @@
+Welcome to the Home Page!
+
+This page contains general information about our application and services.
+
+Here you can find:
+- Latest updates
+- News and announcements
+- Quick navigation links
+
+Thank you for visiting!

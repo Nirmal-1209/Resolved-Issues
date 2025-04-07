@@ -1,0 +1,10 @@
+About Us
+
+We are a passionate team of developers working to build modern web applications with Angular.
+
+Our goal is to:
+- Deliver high-quality software
+- Ensure great user experiences
+- Keep learning and innovating
+
+Visit our website or contact us to learn more!
