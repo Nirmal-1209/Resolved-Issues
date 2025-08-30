@@ -1,0 +1,55 @@
+# How to Change the Remote URL of a Git Repository
+
+If you've set the wrong remote URL for your Git repository or need to update it for any reason, follow these steps:
+
+
+## 1. Check the Current Remote URL
+Open your terminal/command prompt and navigate to your repository folder:
+			git remote -v
+This will display the current remote URLs for `origin` (and any other remotes).
+
+
+## 2. Change the Remote URL
+To change the `origin` remote to a new URL, use the following command:
+			git remote set-url origin NEW_URL
+Replace `NEW_URL` with the correct GitHub repository URL.  
+Example : git remote set-url origin https://github.com/YourUsername/YourRepo.git
+
+
+## 3. Verify the Change
+Check that the remote URL has been updated:
+			git remote -v
+You should now see the new URL listed.
+
+
+## 4. (Optional) Remove and Re-add the Remote
+If you prefer, you can remove the existing remote and add a new one:
+			git remote remove origin
+			git remote add origin https://github.com/YourUsername/YourRepo.git
+
+
+
+## 5. Push to the New Remote
+Once the remote URL is set, you can push your changes as usual:
+			git push -u origin branch-name
+Replace `branch-name` with your current branch (e.g., `main` or `master`).
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+## Notes
+
+- Make sure you have permissions to push to the new remote URL.
+- If you use SSH instead of HTTPS, replace the URL accordingly.
+
+---
+
+**Troubleshooting:**
+- If you get authentication errors, check your GitHub credentials or access token.
+- If the repository does not exist at the new URL, create it on GitHub first.
+
+---
+
+## Reference
+
+- [Git Documentation: Managing Remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
